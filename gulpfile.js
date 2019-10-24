@@ -53,6 +53,10 @@ gulp.task('sass', function () {
     return gulp.src('src/assets/**',)
         .pipe(gulp.dest('dist/assets'))
   });
+  gulp.task('copyData', function () {
+    return gulp.src('src/data/**',)
+        .pipe(gulp.dest('dist/data'))
+  });
   gulp.task('copyHtml', function () {
     return gulp.src('src/*.html',)
         .pipe(gulp.dest('dist'))
@@ -74,6 +78,7 @@ gulp.task('sass', function () {
   gulp.series('clean',
     gulp.parallel(
       'copyAssets',
+      'copyData',
       'copyHtml',
       'copyFavicon',
       'copyJs',
