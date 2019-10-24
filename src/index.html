@@ -11,23 +11,62 @@
 <body>
     <div class="container">
         <header class="header">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox">
-                <div class="burger" id="burger">
-                    <span></span>
-                </div>
-            </label>
-            <h1>CodeJam - Pallete</h1>
+            <div class="header__wrapper">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox">
+                    <div class="burger" id="burger">
+                        <span></span>
+                    </div>
+                </label>
+                <h1>CodeJam - Pallete</h1>
+            </div>
+            <img src="./assets/images/Shape.png" alt="">
         </header>
         <main class="main">
             <div class="bar-wrapper">
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div class="bar">
+                    <ul class="bar__list">
+                        <li class="bar__list-item" >
+                            <img src="./assets/images/bucket.svg" alt="bucket">
+                            <span>Paint bucket</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <img src="./assets/images/colore.svg" alt="color">
+                            <span>Choose color</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <img src="./assets/images/move.svg" alt="move">
+                            <span>Move</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <img src="./assets/images/transform.svg" alt="transform">
+                            <span> Transform</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bar">
+                    <ul class="bar__list">
+                        <li class="bar__list-item">
+                            <span class="bar__text">Current color</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <span class="bar__text" >Prev color</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <span class="bar__text">red</span>
+                        </li>
+                        <li class="bar__list-item">
+                            <span class="bar__text">blue</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="canvas-wrapper">
-                <canvas></canvas>
+                <canvas class="canvas"></canvas>
             </div>
         </main>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
+ 
