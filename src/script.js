@@ -5,10 +5,28 @@ let cellSize = 0;
 
 let myJson32 = [];
 let myJson =[];
+function fillCanvas2(arr, cellSize) {
+    for (let i = 0; i < cellSize; i++) {
+    for(let j =0; j < cellSize; j++) {
+        ctx.fillStyle = arr[i][j];
+        ctx.fillRect(i*(512/cellSize), j*(512/cellSize), (512/cellSize), (512/cellSize));
+    }
+  }}
 
  fetch('./data/4x4.json')
   .then(response => response.json())
   .then(body => body.forEach(element => element.forEach(item => myJson.push('#'+item))));
+
+ fetch('./data/4x4.json')
+  .then(response => response.json())
+  .then(body => body.forEach((element,indexI) => {element.forEach(
+        (item,indexJ) => {
+            ctx.fillStyle = '#'+item;
+            ctx.fillRect(indexI*(512/4), indexJ*(512/4), (512/4), (512/4));
+        }
+      )}
+  
+  ));
 
 fetch('./data/32x32.json')
   .then(response => response.json())
@@ -52,6 +70,7 @@ fetch('./data/32x32.json')
         k++;
     }
 }}
+
 
   
 
