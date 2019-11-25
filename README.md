@@ -5,3 +5,6 @@ Simple web page to show basic piskel clone interface (only markup) and canvas el
 - git clone https://github.com/Egor-Alexandrovich/repair-design-project.git
 - npm install or npm i
 - npm run start to start project
+
+### link
+- https://goofy-tesla-8ad557.netlify.com/
