@@ -1,1 +1,1 @@
-https://egor-alexandrovich.github.io/codejam-canvas/
+https://goofy-tesla-8ad557.netlify.com/
