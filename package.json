@@ -5,13 +5,17 @@
   "main": "index.html",
   "scripts": {
     "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "start": "npm run build && gulp serve",
+    "lint": "eslint ./src/*.js"
   },
   "author": "Egor",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-plumber": "^1.2.1",
